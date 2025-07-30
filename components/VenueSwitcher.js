@@ -1,7 +1,11 @@
 // components/VenueSwitcher.js
 
+/**
+ * Dropdown to select between available exchanges (venues).
+ * Triggers `setSelectedVenue` on change to switch data feed or simulation context.
+ */
 export default function VenueSwitcher({ selectedVenue, setSelectedVenue }) {
-  const venues = ['OKX', 'Bybit', 'Deribit'];
+  const venues = ['OKX', 'Bybit', 'Deribit']; // Supported exchanges
 
   return (
     <div className="mb-4">
